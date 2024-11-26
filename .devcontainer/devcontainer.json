@@ -3,10 +3,5 @@
   "runArgs": [
     "-e",
     "TEST=Working"
-  ],
-  "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {
-      
-    }
-  }
+  ]
 }
