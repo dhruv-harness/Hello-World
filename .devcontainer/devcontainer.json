@@ -1,4 +1,5 @@
 {
+  "image":"mcr.microsoft.com/devcontainers/base",
   "runArgs": [
     "-e",
     "TEST=Working"
