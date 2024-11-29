@@ -1,12 +1,3 @@
 {
-  "image":"mcr.microsoft.com/devcontainers/base",
-  "runArgs": [
-    "-e",
-    "TEST=Working"
-  ],
-  "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {
-      
-    }
-  }
+  "image":"mcr.microsoft.com/devcontainers/base:dev-ubuntu-24.04"
 }
