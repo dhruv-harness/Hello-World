@@ -1,9 +1,10 @@
 {
-  "name": "my-project-devcontainer",
-"image": "mcr.microsoft.com/devcontainers/base:ubuntu",  // Any generic, debian-based image.
-"features": {
-    "ghcr.io/devcontainers/features/go:1": {
-        "version": "1.18"
-    }
-}
+"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features":{
+    "https://raw.githubusercontent.com/dhruv1397/test2/main/devcontainer-feature-go.tgz":{}
+  },
+  "postCreateCommand":"echo \"executing post create command\"",
+  "postStartCommand":"echo \"executing post start command\"",
+  "init":true,"privileged":false,
+  "runArgs":["--mount","type=bind,src=/tmp/test,dst=/tmp/test","--privileged","--security-opt","seccomp=unconfined","--cap-add","SYS_PTRACE"]
 }
