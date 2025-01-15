@@ -6,5 +6,5 @@
   "postCreateCommand":"echo \"executing post create command\"",
   "postStartCommand":"echo \"executing post start command\"",
   "init":true,"privileged":false,
-  "runArgs":["--mount","type=bind,src=/tmp/test,dst=/tmp/test","--privileged","--security-opt","seccomp=unconfined","--cap-add","SYS_PTRACE"]
+  "runArgs":["--privileged","--security-opt","seccomp=unconfined","--cap-add","SYS_PTRACE"]
 }
