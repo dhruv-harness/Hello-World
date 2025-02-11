@@ -5,6 +5,10 @@
     "https://raw.githubusercontent.com/dhruv1397/test2/main/devcontainer-feature-go.tgz":{},
     "ghcr.io/devcontainers/features/github-cli:1.0.13":{}
   },
+  	"mounts": [
+		{"source":"$HOME/emptydir","target":"/root/.bazel_runner","type":"volume","consistency":"cached"},
+    "source=$HOME/emptydir,target=/root/.bazel_runner,type=volume,consistency=cached"
+  ],
   "postCreateCommand":"echo \"executing post create command\"",
   "postStartCommand":"echo \"executing post start command\"",
   "init":true,"privileged":false,
